@@ -2,7 +2,7 @@
 
 A Pomodoro Timer application built with Vue 3 + Vite to help users improve productivity and time management skills.
 
-![Pomodoro App Overview](screenshots/app_overview.png)
+![Pomodoro App Overview](screenshots/app_overview1.png)
 
 ## Project Overview
 
@@ -83,6 +83,8 @@ pomodoro_app/
 4. Add tasks and set priorities and categories
 5. Check tasks as completed when finished
 6. Use filters to find specific tasks
+
+![Timer Interface](screenshots/app_overview2.png)
 
 ## Installation and Running
 
