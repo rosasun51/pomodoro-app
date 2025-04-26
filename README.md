@@ -1,113 +1,113 @@
-# 番茄钟应用 (Pomodoro Timer App)
+# Pomodoro Timer App
 
-一个基于 Vue 3 + Vite 构建的番茄钟应用，帮助用户提高工作效率和时间管理能力。
+A Pomodoro Timer application built with Vue 3 + Vite to help users improve productivity and time management skills.
 
-## 项目概述
+## Project Overview
 
-这个番茄钟应用是一个时间管理工具，基于番茄工作法（Pomodoro Technique）设计。它允许用户在工作和休息之间进行有规律的切换，同时提供任务管理功能，帮助用户更好地组织和完成任务。
+This Pomodoro Timer app is a time management tool based on the Pomodoro Technique. It allows users to alternate between focused work periods and breaks in a structured way, while also providing task management features to help users better organize and complete their tasks.
 
-## 功能特点
+## Features
 
-### 1. 三种工作模式
-- **工作模式**：25分钟的专注工作时间
-- **短休息**：5分钟的短暂休息
-- **长休息**：15分钟的长时间休息
+### 1. Three Working Modes
+- **Work Mode**: 25 minutes of focused work time
+- **Short Break**: 5 minutes of brief rest
+- **Long Break**: 15 minutes of extended rest
 
-### 2. 计时功能
-- 显示剩余时间
-- 开始/暂停/重置按钮
-- 自动在工作和休息模式之间切换，并自动倒计时
-- 每完成4个番茄钟后自动进入长休息
+### 2. Timer Functionality
+- Display of remaining time
+- Start/Pause/Reset buttons
+- Automatic switching between work and break modes with automatic countdown
+- Automatic long break after completing 4 pomodoro cycles
 
-### 3. 任务管理
-- 添加任务
-- 标记任务完成
-- 删除任务
-- 记录每个任务完成的番茄钟数量
+### 3. Task Management
+- Add tasks
+- Mark tasks as completed
+- Delete tasks
+- Track the number of pomodoros completed for each task
 
-### 4. 任务优先级和分类
-- 创建任务时可以设置优先级（高、中、低）
-- 任务可以分配到不同的分类（工作、学习、个人、其他）
-- 任务卡片左侧边框颜色表示优先级（红色=高，黄色=中，绿色=低）
-- 任务分类以小标签形式显示在任务卡片中
+### 4. Task Priority and Categorization
+- Set priority levels (high, medium, low) when creating tasks
+- Assign tasks to different categories (work, study, personal, other)
+- Task card left border color indicates priority (red=high, yellow=medium, green=low)
+- Task categories displayed as small tags in the task card
 
-### 5. 任务筛选
-- 按优先级筛选任务
-- 按分类筛选任务
-- 选择是否显示已完成的任务
+### 5. Task Filtering
+- Filter tasks by priority
+- Filter tasks by category
+- Choose whether to display completed tasks
 
-### 6. 其他功能
-- 计时结束后播放提示音
-- 显示已完成的番茄钟数量
-- 响应式设计，适配不同屏幕尺寸
+### 6. Additional Features
+- Play notification sound when timer ends
+- Display the number of completed pomodoros
+- Responsive design that adapts to different screen sizes
 
-## 技术栈
+## Technology Stack
 
-- **前端框架**：Vue 3
-- **构建工具**：Vite
-- **状态管理**：Pinia
-- **样式**：CSS（自定义样式）
+- **Frontend Framework**: Vue 3
+- **Build Tool**: Vite
+- **State Management**: Pinia
+- **Styling**: CSS (custom styles)
 
-## 项目结构
+## Project Structure
 
 ```
 pomodoro_app/
-├── public/                  # 静态资源
-│   ├── notification.mp3     # 提示音文件
-│   └── tomato.svg           # 应用图标
-├── src/                     # 源代码
-│   ├── assets/              # 资源文件
-│   ├── components/          # 组件
-│   │   ├── Timer.vue        # 计时器组件
-│   │   └── TaskList.vue     # 任务列表组件
-│   ├── store/               # 状态管理
+├── public/                  # Static assets
+│   ├── notification.mp3     # Notification sound file
+│   └── tomato.svg           # App icon
+├── src/                     # Source code
+│   ├── assets/              # Asset files
+│   ├── components/          # Components
+│   │   ├── Timer.vue        # Timer component
+│   │   └── TaskList.vue     # Task list component
+│   ├── store/               # State management
 │   │   └── index.js         # Pinia store
-│   ├── App.vue              # 根组件
-│   ├── main.js              # 入口文件
-│   └── style.css            # 全局样式
-├── index.html               # HTML 模板
-├── package.json             # 项目依赖
-├── vite.config.js           # Vite 配置
-└── README.md                # 项目说明
+│   ├── App.vue              # Root component
+│   ├── main.js              # Entry file
+│   └── style.css            # Global styles
+├── index.html               # HTML template
+├── package.json             # Project dependencies
+├── vite.config.js           # Vite configuration
+└── README.md                # Project documentation
 ```
 
-## 使用方法
+## How to Use
 
-1. 选择工作模式（工作、短休息或长休息）
-2. 点击"开始"按钮启动计时器
-3. 专注工作或休息，直到计时结束
-4. 添加任务并设置优先级和分类
-5. 完成任务后勾选标记为已完成
-6. 使用筛选器查找特定任务
+1. Select a working mode (work, short break, or long break)
+2. Click the "Start" button to start the timer
+3. Focus on work or rest until the timer ends
+4. Add tasks and set priorities and categories
+5. Check tasks as completed when finished
+6. Use filters to find specific tasks
 
-## 安装与运行
+## Installation and Running
 
 ```bash
-# 安装依赖
+# Install dependencies
 npm install
 
-# 开发模式运行
+# Run in development mode
 npm run dev
 
-# 构建生产版本
+# Build for production
 npm run build
 
-# 预览生产版本
+# Preview production build
 npm run preview
 ```
 
-## 未来计划
+## Future Plans
 
-- 添加数据持久化功能
-- 支持自定义工作和休息时间
-- 添加统计和报告功能
-- 支持多语言
-- 添加黑暗模式
+- Add data persistence functionality
+- Support customizable work and break durations
+- Add statistics and reporting features
+- Support multiple languages
+- Add dark mode
 
-## 贡献
+## Contribution
 
-欢迎提交问题和功能请求！
+Issues and feature requests are welcome!
 
-## 许可
+## License
 
 MIT
