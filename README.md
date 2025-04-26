@@ -2,6 +2,8 @@
 
 A Pomodoro Timer application built with Vue 3 + Vite to help users improve productivity and time management skills.
 
+![Pomodoro App Overview](screenshots/app_overview.png)
+
 ## Project Overview
 
 This Pomodoro Timer app is a time management tool based on the Pomodoro Technique. It allows users to alternate between focused work periods and breaks in a structured way, while also providing task management features to help users better organize and complete their tasks.
@@ -30,6 +32,8 @@ This Pomodoro Timer app is a time management tool based on the Pomodoro Techniqu
 - Assign tasks to different categories (work, study, personal, other)
 - Task card left border color indicates priority (red=high, yellow=medium, green=low)
 - Task categories displayed as small tags in the task card
+
+![Task Management Interface](screenshots/task_management.png)
 
 ### 5. Task Filtering
 - Filter tasks by priority
