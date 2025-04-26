@@ -1,5 +1,113 @@
-# Vue 3 + Vite
+# 番茄钟应用 (Pomodoro Timer App)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个基于 Vue 3 + Vite 构建的番茄钟应用，帮助用户提高工作效率和时间管理能力。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 项目概述
+
+这个番茄钟应用是一个时间管理工具，基于番茄工作法（Pomodoro Technique）设计。它允许用户在工作和休息之间进行有规律的切换，同时提供任务管理功能，帮助用户更好地组织和完成任务。
+
+## 功能特点
+
+### 1. 三种工作模式
+- **工作模式**：25分钟的专注工作时间
+- **短休息**：5分钟的短暂休息
+- **长休息**：15分钟的长时间休息
+
+### 2. 计时功能
+- 显示剩余时间
+- 开始/暂停/重置按钮
+- 自动在工作和休息模式之间切换，并自动倒计时
+- 每完成4个番茄钟后自动进入长休息
+
+### 3. 任务管理
+- 添加任务
+- 标记任务完成
+- 删除任务
+- 记录每个任务完成的番茄钟数量
+
+### 4. 任务优先级和分类
+- 创建任务时可以设置优先级（高、中、低）
+- 任务可以分配到不同的分类（工作、学习、个人、其他）
+- 任务卡片左侧边框颜色表示优先级（红色=高，黄色=中，绿色=低）
+- 任务分类以小标签形式显示在任务卡片中
+
+### 5. 任务筛选
+- 按优先级筛选任务
+- 按分类筛选任务
+- 选择是否显示已完成的任务
+
+### 6. 其他功能
+- 计时结束后播放提示音
+- 显示已完成的番茄钟数量
+- 响应式设计，适配不同屏幕尺寸
+
+## 技术栈
+
+- **前端框架**：Vue 3
+- **构建工具**：Vite
+- **状态管理**：Pinia
+- **样式**：CSS（自定义样式）
+
+## 项目结构
+
+```
+pomodoro_app/
+├── public/                  # 静态资源
+│   ├── notification.mp3     # 提示音文件
+│   └── tomato.svg           # 应用图标
+├── src/                     # 源代码
+│   ├── assets/              # 资源文件
+│   ├── components/          # 组件
+│   │   ├── Timer.vue        # 计时器组件
+│   │   └── TaskList.vue     # 任务列表组件
+│   ├── store/               # 状态管理
+│   │   └── index.js         # Pinia store
+│   ├── App.vue              # 根组件
+│   ├── main.js              # 入口文件
+│   └── style.css            # 全局样式
+├── index.html               # HTML 模板
+├── package.json             # 项目依赖
+├── vite.config.js           # Vite 配置
+└── README.md                # 项目说明
+```
+
+## 使用方法
+
+1. 选择工作模式（工作、短休息或长休息）
+2. 点击"开始"按钮启动计时器
+3. 专注工作或休息，直到计时结束
+4. 添加任务并设置优先级和分类
+5. 完成任务后勾选标记为已完成
+6. 使用筛选器查找特定任务
+
+## 安装与运行
+
+```bash
+# 安装依赖
+npm install
+
+# 开发模式运行
+npm run dev
+
+# 构建生产版本
+npm run build
+
+# 预览生产版本
+npm run preview
+```
+
+## 未来计划
+
+- 添加数据持久化功能
+- 支持自定义工作和休息时间
+- 添加统计和报告功能
+- 支持多语言
+- 添加黑暗模式
+
+## 贡献
+
+欢迎提交问题和功能请求！
+
+## 许可
+
+MIT
